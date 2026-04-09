@@ -1,0 +1,21 @@
+{
+  "name": "task-manager",
+  "version": "1.0.0",
+"description": "Task Manager REST API and client built with Node.js Express and SQLite",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "seed": "node src/database.js",
+    "docs": "npx apidoc -i src/ -o apidoc/",
+    "test": "npx testcafe chrome tests/test.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "apidoc": "^1.2.0",
+    "testcafe": "^3.7.0"
+  }
+}
